@@ -44,6 +44,19 @@
 .w3-theme-v,.w3-hover-theme-v:hover{color:#000 !important; background-color:#ecbdff !important}
 .w3-theme-r,.w3-hover-theme-r:hover{color:#000 !important; background-color:#ff6663 !important}
   
+  
+.column {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+  
 </style>
 
 
@@ -87,10 +100,10 @@ body {font-family: "Lato", sans-serif}
     </div>
   </div>
   
-  <div class="w3-card">
-    <p>w3-card</p>
+  <div class="row">
+    <div class="column"></div>
+    <div class="column"></div>
   </div>
-  
   
 
   <!-- The Band Section -->
