@@ -10,6 +10,14 @@
 <script src="https://kit.fontawesome.com/e9dd2cd32d.js" crossorigin="anonymous"></script>
 <style>
 html,body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-sidebar {
+  z-index: 3;
+  width: 150px;
+  top: 47px;
+  bottom: 0;
+  height: inherit;
+}
+
 </style>
 <style>
 .navbar {margin-bottom: 0;}
@@ -51,6 +59,11 @@ body {
 .w3-theme-b,.w3-hover-theme-b:hover{color:#000 !important; background-color:#9ee7f5 !important}
 .w3-theme-v,.w3-hover-theme-v:hover{color:#000 !important; background-color:#ecbdff !important}
 .w3-theme-r,.w3-hover-theme-r:hover{color:#000 !important; background-color:#ff6663 !important}
+
+mark {
+  background-color: pink;
+  color: black;
+}
 </style>
 </head>
 <body>
@@ -67,6 +80,7 @@ body {
     </div>
   </div>
 </div>
+
 
 <!-- Page Container -->
 <div class="w3-content w3-margin-top" style="max-width:1400px;">
@@ -119,26 +133,31 @@ body {
     <div class="w3-threequarter">
     
       <div class="w3-container w3-card w3-white w3-margin-bottom">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience</h2>
+        <h2 class="w3-text-theme-black w3-padding-16"><i class="fa-solid fa-graduation-cap fa-fw w3-margin-right w3-xxlarge w3-text-theme-dark"></i>Education</h2>
         <div class="w3-container">
-          <h5 class="w3-opacity"><b>Front End Developer / w3schools.com</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2015 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
-          <p>Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
+          <h5 class="w3-text-black"><b>Integrated PhD in Statistical Applied Mathematics (PhD SAMBa)</b></h5>
+          <h6 class="w3-text-theme-dark"><i class="fa fa-location-dot fa-fw w3-margin-right"></i>University of Bath, Bath, United Kingdom</h6>
+          <h6 class="w3-text-theme-dark"><i class="fa fa-calendar fa-fw w3-margin-right"></i>September 2020 - <span class="w3-tag w3-pink w3-round">Present</span></h6>
+          <br>
+          <h6><b>PhD Thesis: </b>Mathematical Modelling of Radiotherapy Cancer Treatments</h6>
+          <p> My thesis is concerned with brachytherapy; a type of radiation therapy where radioactive sources are placed directly onto the tumour to be treated. The aim of my research is to find the optimal positions of the sources such that radiation damage on organs in the vicinity of the tumour is minimised. This is done by developing a mathematical model using MATLAB which incorporates both the physical equations governing the system, and also real-life patient data. Main mathematical areas include: partial differential equations, inverse problems, numerical optimisation, finite element method, data assimilation. </p>
           <hr>
         </div>
         <div class="w3-container">
-          <h5 class="w3-opacity"><b>Web Developer / something.com</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Mar 2012 - Dec 2014</h6>
+          <h5 class="w3-text-black"><b>Master of Research in Statistical Applied Mathematics (MRes SAMBa)</b></h5>
+          <h6 class="w3-text-theme-dark"><i class="fa fa-location-dot fa-fw w3-margin-right"></i>University of Bath, Bath, United Kingdom</h6>
+          <h6 class="w3-text-theme-dark"><i class="fa fa-calendar fa-fw w3-margin-right"></i>September 2020 - September 2021</h6>
+          <br>
           <p>Consectetur adipisicing elit. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
           <hr>
         </div>
         <div class="w3-container">
-          <h5 class="w3-opacity"><b>Graphic Designer / designsomething.com</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jun 2010 - Mar 2012</h6>
+          <h5 class="w3-text-black"><b>Bachelor of Science in Mathematics and Physics (BSc)</b></h5>
+          <h6 class="w3-text-theme-dark"><i class="fa fa-location-dot fa-fw w3-margin-right"></i>University of Limerick, Limerick, Ireland</h6>
+          <h6 class="w3-text-theme-dark"><i class="fa fa-calendar fa-fw w3-margin-right"></i>September 2016 - August 2020</h6>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p><br>
         </div>
       </div>
-
       <div class="w3-container w3-card w3-white">
         <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
         <div class="w3-container">
