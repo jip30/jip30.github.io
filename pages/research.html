@@ -162,8 +162,8 @@ body {font-family: "Lato", sans-serif}
 <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:1200px" id="Research">
   <h2 class="w3-monospace"><b>My Research</b></h2>
   <p class = "main">My research focuses on "Mathematical modelling of radiotherapy cancer treatments". 
-    The radiation treatment I'm considering is brachytherapy, a type of radiation treatment consisting of placing sealed, radioactive sources directly onto or next to the tumour to be treated. These sources emit radiation which kills the tumour. 
-    Brachytherapy is most commonly used to treat cervical cancer, uterine endometrial cancer, prostate cancer, and certain cases of breast cancer. 
+    TIn particular, my work focuses on brachytherapy, a type of radiation treatment consisting of placing sealed, radioactive sources directly onto or next to the tumour to be treated. These sources emit radiation that kills the tumour. 
+    Brachytherapy is most commonly used to treat cervical and prostate cancer.
     It has proven to be an efficient form of treatment as the radiation dose delivered can be focused on the tumour, and can be quite high, while limiting dose exposure of the surrounding normal tissue. 
     However, a disadvantage of brachytherapy occurs when the tumour is close to a critical organ. 
     In this instance, the radiation emitted from the sources may damage these critical organs, which could cause further health problems and complications. 
@@ -244,7 +244,42 @@ body {font-family: "Lato", sans-serif}
   <p>&copy; Jennifer Power 2022, Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
 </footer>
   
-
+<script>
+  // Automatic Slideshow - change image every 4 seconds
+  var myIndex = 0;
+  carousel();
+  
+  function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 4000);    
+  }
+  
+  // Used to toggle the menu on small screens when clicking on the menu button
+  function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+      x.className += " w3-show";
+    } else { 
+      x.className = x.className.replace(" w3-show", "");
+    }
+  }
+  
+  // When the user clicks anywhere outside of the modal, close it
+  var modal = document.getElementById('ticketModal');
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+  </script>
+  
 
 </body>
 </html>
