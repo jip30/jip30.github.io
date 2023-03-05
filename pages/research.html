@@ -186,7 +186,7 @@ body {font-family: "Lato", sans-serif}
 </div>
   
 <!-- Poster Image -->
-<div class=" w3-display-container w3-center">
+<div class="mySlides w3-display-container w3-center">
   <img src="/images/STEMforBritain.png">
 </div>
 
@@ -248,16 +248,16 @@ body {font-family: "Lato", sans-serif}
 // Get the img object using its Id
 img = document.getElementById("img1");
 // Function to increase image size
-//function enlargeImg() {
+function enlargeImg() {
   // Set image size to 1.5 times original
-  //img.style.transform = "scale(2)";
+  img.style.transform = "scale(2)";
   // Animation effect
   //img.style.transition = "transform 0.25s ease";
 }
   // Function to reset image size
-// function resetImg() {
+function resetImg() {
   // Set image size to original
-  // img.style.transform = "scale(1)";
+  img.style.transform = "scale(1)";
   //img.style.transition = "transform 0.25s ease";
 }
   
